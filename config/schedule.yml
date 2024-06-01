@@ -1,0 +1,7 @@
+fetch_users:
+  cron: "0 * * * *"  # Every hour
+  class: FetchUsersJob
+
+daily_summary:
+  cron: "59 23 * * *"  # End of day
+  class: DailySummaryJob
